@@ -38,19 +38,99 @@
 			text-align: center;
 			margin-bottom: initial;
 		}
+
+
+		.formulario {
+
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+		}
+
+		input {
+			border-width: 0px ;
+			border-bottom-width: 2px;
+		}
+
+		button {
+			padding: 8px;
+			font-size: 16px;
+			background-color: black;
+			color: white;
+			border-radius: 12px;
+			margin-top: 6px;
+			width: 50%;
+			border-color: initial;
+			border-style: initial;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+
+
 	</style>
 	<body>
 		<!-- Code Here -->
 		<div class="all-content">
 			<h4>March 22, 2024</h4>
 			<h2>Lorem Ipsum</h2>
-			<img src="./assets/picture_1/picture_1-lg.jpeg" alt="image"> 
+
+
+			<picture> 
+		
+			<source media="(min-width:950px)" srcset="./assets/picture_1/picture_1-lg.jpeg">
+			<source media="(min-width:365px)" srcset="./assets/picture_1/picture_1-md.jpeg">
+			<img src="assets/picture_1/picture_1-lg.jpeg">
+		 </picture>
+			 
+
+		
+			
+			
+	
+		
+			
 			<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			<h2>Lorem Ipsum</h2>
 			<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			<h2>Lorem Ipsum</h2>
 			<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-			<video src="./assets/video/production ID_3773486_lg.mp4"> </video>
+			
+			<video width="100%" controls="autoplay" loop="1">
+				<source srcset="" src="./assets/video/production ID_3773486_sm.mp4"> </source>
+			</video>
+
+			<h2>Lorem Ipsum</h2>
+			<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+			<form class="formulario">
+				<label for="description">Description:</label>
+
+				<input type="textarea" id="description" name="description">
+
+
+				<label for="name">First name:</label>
+  <input type="text" id="name" name="name" value="John" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+  
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" value="example@gmail.com" required>
+
+  <label> Website:</label>
+  <input type="textarea" id="Website" name="Website" required>
+
+  <label> Post a Comment</label>
+  <button type="submit">Submit</button>
+			</form>
+
+
+
+
+
+			
+
+			 
+
+
+ 
 
 			
 		</div>
