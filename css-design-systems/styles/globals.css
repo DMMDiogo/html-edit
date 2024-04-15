@@ -1,0 +1,119 @@
+:root {
+    --black: #181818;
+    --neutral: #fafafa;
+    --neutral-gray: #a3a3a3;
+    --primary: #0070D2;
+    --primary-10: #005FB2;
+    --red: #C23934;
+    --red-10: #A61A14;
+    --green: #4BCA81;
+    --green-10: #04844B;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background: #fafafa;
+}
+
+.wrapper__content {
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 0;
+    gap: 24px;
+
+}
+
+ .avatar-bg, .avatar-md, .avatar-sm {
+
+    border-radius: 90px;
+    overflow: hidden;
+    stroke-width: 0px;
+}
+
+
+.avatar img {
+    width: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.avatar-sm {
+    height: 32px;
+    width: 32px;
+    background-color: #181818;
+}
+
+.avatar-md {
+    height: 64px;
+    width: 64px;
+    background-color: #181818;
+}
+
+.avatar-bg {
+    height: 128px;
+    width: 128px;
+    background-color: #181818;
+}
+
+
+button {
+
+padding: 8px 16px 8px 16px;
+background-color: #0070D2;
+stroke-width: initial;
+border-style: none;
+color: white;
+border-radius: 4px;
+vertical-align: middle;
+display: flex;
+gap: 4px;
+font-size: 18px;
+align-items: center;
+}
+
+button:hover {
+    background-color: #005FB2;
+}
+
+button:active {
+    filter: drop-shadow(0px 0px 3px #005fb2);
+    background-color: #005FB2;
+}
+
+#icon {
+    font-size: inherit;
+}
+.material-symbols-outlined {
+    font-size: inherit;
+}
+
+
+
+.btn-hover {
+
+    background-color: #005FB2;
+
+}
+
+.btn-pressed {
+    filter: drop-shadow(0px 0px 3px #005fb2);
+    background-color: #005FB2;
+}
+
+.btn-disabled {
+background-color: #C9C7C5;
+}
