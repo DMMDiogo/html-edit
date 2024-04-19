@@ -169,12 +169,19 @@ input[name="input-disabled"] {
 input[name="input-error"] {
    
      border: 1px solid #C23934;
-     pointer-events: none;
+     
      filter: drop-shadow(0px 0px 2px #C23934);
+     
     
      
  }
-
+ 
+ .input-fields [name="input-error"]::before{
+   content: 'Error Label';
+   color: #A61A14;  
+   text-align: left; 
+  
+}
 
  input:focus {
     filter: drop-shadow(0px 0px 3px #1589EE);
