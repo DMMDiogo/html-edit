@@ -11,7 +11,7 @@ body {
 
             font-family: "IBM Plex Sans";
 }
-.main-card {
+.maincard {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -84,6 +84,7 @@ button {
     text-transform: uppercase;
     border: 1px blue;
     border-style: solid;
+    cursor: pointer;;
 
 }
 img {
@@ -92,6 +93,7 @@ img {
     position: absolute;
     top: 34%;
     left: 11%;
+    z-index: 20;
 }
 
 .nike-logo {
