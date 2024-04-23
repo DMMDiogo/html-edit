@@ -11,7 +11,7 @@ body {
 
             font-family: "IBM Plex Sans";
 }
-.main-card {
+.maincard {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -32,6 +32,7 @@ body {
     justify-content: space-between;
     height: 10%;
     margin-bottom: 4px;
+    padding: 12px 12px 0px 12px;
 }
 
 p {
@@ -40,11 +41,11 @@ p {
 .top {
     height: 80%;
     position: relative;
-    padding: 12px;
+   /* padding: 12px;*/
     padding-bottom: 0px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 16px;
     text-transform: uppercase;
     color: white;
 }
@@ -52,6 +53,11 @@ p {
 .description {
     text-transform: none;
     font-size: 12px;
+    padding: 0px 12px 12px 12px;
+}
+
+.title {
+    padding: 0px 12px 0px 12px;
 }
 
 .bottom {
@@ -78,6 +84,7 @@ button {
     text-transform: uppercase;
     border: 1px blue;
     border-style: solid;
+    cursor: pointer;;
 
 }
 img {
@@ -86,6 +93,7 @@ img {
     position: absolute;
     top: 34%;
     left: 11%;
+    z-index: 20;
 }
 
 .nike-logo {
@@ -101,16 +109,19 @@ img {
     color: white;
     opacity: 0.2;
     text-transform: uppercase;
-    margin-top: 35px;
-    font-size: 172px;
-    font-weight: 300;
-
+    margin-top: -22px;
+    font-size: 180px;
+    font-weight: 900;
+    margin-left: 6px;
 }
 
+
+
 .air-div {
-    overflow: hidden;
+    
     position: relative;
     height: 100%;
+    overflow: hidden;
 }
 
 h4 {
