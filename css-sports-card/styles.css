@@ -23,8 +23,18 @@ body {
     aspect-ratio: 9 / 14;
     height: 460px;
     box-shadow: 4px 6px 36px #000000a1;
-    ;
     animation: rotation 8s infinite;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform-style: preserve-3d;
+    
+    
+    
+}
+.maincard:hover {
+    
+    animation: none;
+   
+    
 }
 
 .logo-price {
@@ -135,7 +145,7 @@ h4 {
 
 
 
-@keyframes rotation {
+ @keyframes rotation {
     0%, 100% {
       transform: rotate(0deg);
     }

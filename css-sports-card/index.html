@@ -38,12 +38,25 @@
     </div>
   </body>
   <script>
-    const maincard = document.querySelector(".maincard");
-    const button = document.querySelector("button");
+  
+  document.addEventListener("DOMContentLoaded", function() {
+  
+  
+  const maincard = document.querySelector(".maincard");
 
-    button.addEventListener("click", function () {
-      maincard.style.width = "450" + "px";
-      maincard.style.height = "300" + "px";
-    });
+  document.addEventListener('mousemove', handleMouseMove);
+
+  function handleMouseMove(event) {
+    const { clientX, clientY } = event;
+    const { offsetWidth, offsetHeight } = maincard;
+    
+    const rotationX = (clientY / offsetHeight - 0.5) * 90; 
+    const rotationY = (clientX / offsetWidth - 0.5) * 180; 
+    maincard.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+  }
+
+});
+
+    
   </script>
 </html>
