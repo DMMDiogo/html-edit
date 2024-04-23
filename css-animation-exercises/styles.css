@@ -1,8 +1,10 @@
 body {
-    background-color: pink;
+    background-color: #e57474;
   min-height: 100vh;
   
 }
+
+
 
 .main-content {
    
@@ -26,6 +28,69 @@ body {
     
 }
 
+.third-exercise {
+    font-family: "Inter";
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+.from {
+    padding: 0px 10px 0px 10px;
+    animation: letters 1s forwards;
+}
+
+.above {
+
+    animation: letters 1s forwards;
+
+}
+
+
+.letter {
+    animation: letters 3s forwards;
+    opacity: 0;
+    padding: 0px 2px 0px 2px;
+}
+
+
+.A {
+    animation-delay: 0s; 
+}
+
+.P {
+    animation-delay: 0.5s;
+
+}
+
+.P-two {
+    animation-delay: 1s;
+
+}
+
+.E {
+    animation-delay: 1.5s;
+
+}
+
+.A-two {
+    animation-delay: 2s;
+
+}
+
+.R {
+    animation-delay: 2.5s;
+
+}
+
+
+
+
+
+
+
+
 .poligon {
     background-color: rgb(93, 18, 163);
     width: 200px;
@@ -45,38 +110,33 @@ body {
     background-color: aliceblue;
 }
 
-.one {
+.purple-bar {
     background-color: blueviolet;
     width: 0px;
     height: 10px;
-    animation: progressBarOne 5s infinite;
+    animation: progressBarOne 6s forwards;
+    animation-iteration-count: 1; 
     
 
 }
+
+
 .two {
-    background-color: blueviolet;
-    width: 0px;
-    height: 10px;
-    animation: progressBarTwo 5s infinite;
-    animation-delay: 3s;
 
+    animation-delay: 1s;
+    
 }
+
 .three {
-    background-color: blueviolet;
-    width: 0px;
-    height: 10px;
-    animation: progressBarThree 4s infinite;
-    animation-delay: 4s;
 
+    animation-delay: 2s;
+    
 }
+
 .four {
-    background-color: blueviolet;
-    width: 0px;
-    height: 10px;
-    animation: progressBarOne 4s infinite;
-    animation-delay: 12s;
-
+    animation-delay: 3s;  
 }
+
 
 .two-exercise {
     display: flex;
@@ -88,15 +148,13 @@ body {
    
     0% {
         box-shadow: 10px 20px 30px rgb(0, 0, 0);
-        transform: translateX(0px);
-        transform: skew(25deg);
+        transform: translateY(0px) skew(25deg);
         
     }
 
     50% {
         box-shadow: 0px 0px 0px rgb(25, 25, 25);
-        transform: translateX(200px);
-        transform: skew(25deg);
+        transform: translateY(10px) skew(25deg);
         
     }
   }
@@ -107,14 +165,8 @@ body {
         width: 0%;
     }
 
-    100% {
+    53% {
         width: 100%;
-    }
-  }
-
-  @keyframes progressBarTwo {
-    0% {
-        width: 0%;
     }
 
     100% {
@@ -122,12 +174,18 @@ body {
     }
   }
 
-  @keyframes progressBarThree {
+
+
+  @keyframes letters {
     0% {
-        width: 0%;
+        opacity: 0;
+         transform: translateY(-15px);
+
     }
 
     100% {
-        width: 100%;
+
+        opacity: 1;
+        transform: translateY(0px);
     }
   }
