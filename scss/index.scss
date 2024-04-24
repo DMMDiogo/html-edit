@@ -1,0 +1,27 @@
+//Variaveis
+
+
+$spacings: 4, 8;
+$cols: 12;
+$cols-second:2, 4, 5;
+
+@for $i from 0 through $cols{
+ .column-#{$i} {
+    margin:0;
+ } 
+}
+
+@each $i in $cols-second{
+    .cols-second#{$i} {
+       margin:0;
+    } 
+   }
+
+button {
+    background: yellow;
+}
+
+.text {
+    background-color: black;
+    font-size: 22px;
+}
