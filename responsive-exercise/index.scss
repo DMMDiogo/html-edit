@@ -1,0 +1,251 @@
+
+
+$text-color:#ffffff;
+$accent-color: yellow;
+$card-background-color: #404040;
+$tab-font-size: 18px;
+$sizing: 2px;
+
+body {
+    background-color: #272727;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter";
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+
+
+    .body-title {
+        display: flex;
+        flex-direction: column;
+        color: $text-color;
+        text-align: center;
+        color: $accent-color;
+        margin-bottom: 60px;
+        padding: 0px 12px 0px 12px;
+
+        .sub-title-content {
+            font-weight: 300;
+            margin-top: initial;
+            max-width: 600px;
+            font-style: italic;
+        }
+
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        max-width: 900px;
+        justify-content: center;
+        padding-left: 12px;
+        padding-right: 12px;
+        
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+    
+            .tabs-left {
+                display: flex;
+                justify-content: space-between;
+                gap: 18px;
+    
+                h3 {
+                    font-size: $tab-font-size;
+                    color: $text-color;
+                    margin: $tab-font-size / 2 0px $tab-font-size / 2 0px ;
+                    
+                }
+    
+    
+            }
+    
+            .tab-right {
+    
+                h3 {
+                    font-size: $tab-font-size;
+                    color: $accent-color;
+                    margin: $tab-font-size / 2 0px $tab-font-size / 2 0px ;
+                    
+                }
+    
+            }
+        }
+        
+    
+       .cards {
+        display: flex;
+        gap: 12px ;
+        width: 100%;
+        margin-top: $tab-font-size;
+       
+        
+    
+        .single-card {
+            display: flex;
+            background-color: $card-background-color;
+            width: 100%;
+            max-height: 313px;
+            border-radius: 8px;
+            border: 1px solid #5E5E5E;
+            flex-grow: 1;
+            padding: 16px;
+            flex-direction: column;
+
+            .card-text-content {
+                
+                    text-overflow: ellipsis;
+
+                    
+                .description {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: $text-color;
+                    margin: $sizing 0px $sizing * 3 0px;
+                    overflow: hidden; 
+                    text-overflow: ellipsis;
+                }
+                .title-card {
+                    font-size: 14px;
+                    color: $text-color;
+                    margin: $sizing * 4 0px $sizing 0px;
+                }
+    
+                .description {
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: $text-color;
+                    margin: $sizing 0px $sizing * 3 0px;
+                    overflow: hidden; 
+                    text-overflow: ellipsis;
+                    max-height: 79px;
+                }
+    
+                .data {
+                    color: #307BEC;
+                    margin: 8px 0px 7px 0px;
+                    font-size: 12px;
+                    font-weight: 600;
+    
+                }
+
+
+                
+
+            }
+
+            
+            
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 130px;
+                border-radius: 4px;
+            }
+        }
+       }
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 550px) {
+body {
+
+    height: 130vh;
+    justify-content: unset;
+
+
+    .body-title {
+        margin-bottom: 30px;
+    }
+
+
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+        .tabs {
+            flex-wrap: wrap;
+
+
+            .tabs-left {
+                h3 {
+                    font-size: $tab-font-size / 1.2;
+        
+                }
+            }
+            .tab-right {
+                position: absolute;
+                bottom: 5%;
+                left: 25%;
+                right: 25%;
+
+                h3 {
+                    font-size: $tab-font-size / 1.2;
+                    text-align: center;
+    
+                }
+
+            }
+        }
+
+        .cards {
+            flex-wrap: wrap;
+
+            .single-card {
+                height: 100px;
+                width: 100%;
+                flex-direction: row;
+                gap: 12px;
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                padding: 12px 6px 12px 6px;
+
+                .card-text-content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: $sizing;
+                    width: 72%;
+
+                    .title-card {
+                        margin: 0px 0px 5px 0px ;
+                    }
+
+                    .description {
+                        margin: 0px;
+                    }
+                    .data {
+                        margin: 5px 0px 0px 0px ;
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    width: 100px;
+                    height: 100px;
+                    left: -12px;
+                }
+            }
+        }
+    }
+
+}
+    
+
+    
+}
