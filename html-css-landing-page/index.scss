@@ -9,8 +9,6 @@ body {
     box-sizing: border-box;
 
     
-
-
     .btn {
         background-color: white;
         padding:8px 16px 8px 16px ;
@@ -49,6 +47,15 @@ body {
 
     }
 
+    @media screen and (max-width: 500px) {
+        .hero-title {
+         font-size: 40px;
+        }
+
+        .rounded-blue-hero {
+            bottom: 14%;
+        }
+     }
 
 
     .nav {
@@ -62,6 +69,7 @@ body {
         padding: 0px 42px 0px 42px;
         align-items: center;
 
+
         .logo-links {
             display: flex;
             gap: 16px;
@@ -70,6 +78,12 @@ body {
             .links {
                 font-size: 16px;
                 font-weight: 300;
+            }
+
+            @media screen and (max-width: 500px) {
+               .links {
+                display: none;
+               }
             }
 
             .nav-logo {
@@ -88,6 +102,14 @@ body {
 
         }
     }
+
+    @media screen and (max-width: 500px) {
+        .nav {
+         padding: 0px 16px 0px 16px;
+        }
+     }
+
+
     .hero {
         height: 90vh;
         display: flex;
@@ -99,6 +121,12 @@ body {
     margin: auto;
     padding: 0px 12px 86px 12px;
     position: relative;
+
+    @media screen and (max-width: 500px) {
+
+        box-sizing: border-box;
+    padding: 0px 20px;
+    }
    
         
 
@@ -121,10 +149,22 @@ body {
         }
 
         .hero-video {
-            width: 460px;
+            max-width: 460px;
             height: 298px;
             padding-top: 46px;
-        }    
+            width: 100%;
+        }  
+        
+        @media screen and (max-width: 500px) {
+            .hero-title {
+             font-size: 40px;
+            }
+
+            .hero-text {
+                font-size: 16px;
+
+            }
+         }
 
     }
 
@@ -135,6 +175,7 @@ body {
         align-items: center;
         background-color: rgba(245, 245, 245, 1);
         padding: 64px 0px 32px 0px;
+
 
         .works-title {
             text-align: center;
@@ -163,7 +204,36 @@ body {
             width: 100%;
             max-width: 600px;
         }
+
+        @media screen and (max-width: 500px) {
+            .works-title {
+             font-size: 24px;
+
+            }
+
+            .works-text {
+                font-size: 16px;
+                width: 80%;
+
+            }
+
+            .works-img {
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 294px;
+            }
+         }
+
+        
     }
+
+    @media screen and (max-width: 500px) {
+        .works {
+         box-sizing: border-box;
+         padding: 0px 18px;
+
+        }
+     }
 
     .solutions {
         display: flex;
@@ -268,6 +338,23 @@ body {
             }
         }
 
+        @media screen and (max-width: 500px) {
+            .solutions-title {
+             font-size: 24px;
+    
+            }
+
+            .solutions-text {
+                font-size: 16px;
+                width: 80%;
+       
+               }
+
+            .solutions-bg {
+                background-color: rgba(245, 245, 245, 1);
+            }
+         }
+
     }
 
     .breadcrumbs-div {
@@ -285,6 +372,13 @@ body {
             margin: initial;
             padding-bottom: 18px;
 
+        }
+
+        @media screen and (max-width: 500px) {
+            .breadcrumbs-div-title {
+             font-size: 24px;
+    
+            }
         }
 
         .breadcrumbs {
@@ -390,7 +484,30 @@ body {
             }
 
         }
+
+        @media screen and (max-width: 500px) {
+            .breadcrumbs-div-single-card {
+
+                min-width: 150px;
+    
+            }
+        }
        }
+
+       @media screen and (max-width: 500px) {
+        .breadcrumbs-div-cards {
+         gap: 10px;
+
+        }
+    }
+    }
+
+    @media screen and (max-width: 500px) {
+        .breadcrumbs-div {
+         padding: 40px 10px 40px 10px;
+         box-sizing: border-box;
+
+        }
     }
 
     .banner-blue {
@@ -412,14 +529,41 @@ body {
         .banner-button {
             color: var(--blue);
         }
+
+        @media screen and (max-width: 500px) {
+            .banner-title {
+    
+                font-size: 30px;
+    
+            }
+        }
     }
+
+    @media screen and (max-width: 500px) {
+        .banner-blue {
+
+            box-sizing: border-box;
+            flex-direction: column;
+            padding: 83px 28px;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+        }
+    }
+   
+
+    
 
     .footer {
         display: flex;
         width: 100%;
         padding: 27px 46px;
-        height: 223px;
         box-sizing: border-box;
+        margin-top: 91px;
+        border-top: 1px solid rgba(223, 223, 223, 1);
+
 
         .footer-col {
 
@@ -444,6 +588,32 @@ body {
 
         }
 
+        .one {
+            width: 35%;
+            padding-right:20px ;
+
+            .email-button {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+
+                #email {
+                    font-family: 'Inter';
+                    border: 1px solid rgba(235, 235, 235, 1);
+                    padding: 6px 0px 6px 8px;
+                    height: 33px;
+                    box-sizing: border-box;
+                    width: 65%;
+
+                }
+            }
+            .text-footer {
+                line-height: 16px;
+                width: 80%;
+                margin-top: 12px;
+            }
+        }
+
         .four {
             background-image: url('./assets/logo-full.png');
             background-size: contain;
@@ -453,6 +623,39 @@ body {
             background-repeat: no-repeat;
             
 
+
+        }
+
+        @media screen and (max-width: 500px) {
+
+            .one {
+
+                width: 100%;
+                padding-right: 0px;
+    
+            }
+
+            .two {
+
+                width: 47%;
+
+            }
+
+            .three {
+                width: 47%;
+            }
+
+            .four {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .footer {
+
+            flex-wrap: wrap;
+            gap: 12px;
 
         }
     }
