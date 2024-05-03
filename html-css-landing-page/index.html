@@ -153,7 +153,7 @@
             <h6 class="footer-title">Subscribe</h6>
             <div class="email-button">
                 <textarea id="email" name="email" placeholder="E-mail" required></textarea>
-                <button type="submit" class="btn fundo-black">Submit</button>
+                <button type="subscribe" class="btn fundo-black">Subscribe</button>
             </div>
             <h6 class="footer-title text-footer">Get the latest news and articles to your inbox every month.</h6>
             
@@ -177,4 +177,28 @@
         <div class="footer-col four"></div>
     </div>
 </body>
+
+<script>
+
+const breadcrumbs = document.querySelectorAll(".single-breadcrumb");
+
+breadcrumbs.forEach(breadcrumb => {
+    breadcrumb.addEventListener('click', function() {
+        
+        if (breadcrumb.classList.contains("bc-active")) {
+         
+            breadcrumb.classList.remove("bc-active");
+        } 
+        else {
+           
+            breadcrumb.classList.add("bc-active");
+        }
+    });
+});
+
+
+
+
+
+</script>
 </html>
